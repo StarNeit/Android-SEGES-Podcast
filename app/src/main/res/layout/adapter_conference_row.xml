@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/adapter_root"
+    android:background="@color/adapter_bg_1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:id="@+id/conference_header"
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--TextView
+            android:id="@+id/show_conference_date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="30 Jan 2015"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" /-->
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:20"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/textView" />-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PodCast Title "
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                android:maxLines="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postcast categories"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/category_unselected"
+                android:id="@+id/categories" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:id="@+id/option_layout"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/favorite"
+                    android:padding="7dp"
+                    android:textSize="12sp"
+                    android:background="@color/button_round"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_favorite" />
+
+                <TextView
+                    android:text="@string/hor_senere"
+                    android:layout_marginLeft="4dp"
+                    android:padding="7dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/listen_later_bg"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_hear_later" />
+
+
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/checkbox"
+                android:layout_width="48dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_play"
+                android:tag="play"
+                android:background="@null"
+                android:layout_height="48dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="7dp"
+        android:id="@+id/pod_detail"
+        android:visibility="gone"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:src="@drawable/temp_podcast"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="false" />
+            <ImageButton
+                android:id="@+id/checkbox2"
+                android:layout_width="45dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_play_large"
+                android:background="@null"
+                android:tag="play"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:maxLines="6"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="A podcast is a form of digital media that consists of an episodic series of audio, video, digital radio, PDF, or ePub files subscribed to and downloaded through"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

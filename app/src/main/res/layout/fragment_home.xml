@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9ca">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/black"
+        android:weightSum="3"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/category_1"
+            android:layout_weight="1"
+            android:text="@string/category_1"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:background="@color/text_blue"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/category_2"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:text="@string/category_2"
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:gravity="center"
+            android:background="@color/category_unselected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/category_3"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:text="@string/category_3"
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:gravity="center"
+            android:background="@color/category_unselected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--<android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

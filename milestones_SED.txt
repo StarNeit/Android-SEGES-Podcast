@@ -1,0 +1,5 @@
+1. all the screens and basically functions(no connect api): 200USD
+
+2. connect with api and finish the all functions: 200USD
+
+3. maintenance and bug fix: 100

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Min profil"
+        android:textColor="@color/list_title"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/profile_bg"
+            android:layout_width="match_parent"
+            android:paddingBottom="7dp"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_profile_large"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Torben Kristen"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="android@gmail.com"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content" />
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:text="6900 Skjern"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content" />-->
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/favorite"
+                    android:layout_width="140dp"
+                    android:layout_marginRight="7dp"
+                    android:textColor="@android:color/white"
+                    android:text="Favoritter"
+                    android:background="@color/button_round"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/listen_later"
+                    android:text="@string/hor_senere"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="140dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/listen_later_bg"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@color/button_round"
+                android:layout_height="2dp" />
+            <Button
+                android:id="@+id/my_tags"
+                android:text="@string/mine_emneord"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_width="180dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/roundrect_btn"
+                android:layout_height="58dp" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_height="match_parent">
+                <include layout="@layout/view_my_tags"/>
+<!--                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="7dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/uncheck"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/uncheck"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/uncheck"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:background="@color/button_round"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/uncheck"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/uncheck"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/uncheck"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/check"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="My Test Tag 1"
+                                android:layout_marginLeft="7dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>-->
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

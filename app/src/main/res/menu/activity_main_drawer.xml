@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_front" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/view_list"
+            android:title="@string/menu_my_list" />
+        <item
+            android:id="@+id/nav_discover"
+            android:icon="@drawable/magnify"
+            android:title="@string/menu_discover" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/account"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_tags"
+            android:icon="@drawable/tag_outline"
+            android:title="@string/menu_my_tags" />
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

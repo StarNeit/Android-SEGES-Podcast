@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">SEGES Podcast</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--home screen-->
+    <string name="home_title_name">Nyheder når du har tid</string>
+
+    <string name="category_1">Personlig podcasts</string>
+    <string name="category_2">Alle podcasts</string>
+    <string name="category_3">Lange podcasts</string>
+
+    <string name="menu_front">Home</string>
+    <string name="menu_my_list">My List</string>
+    <string name="menu_discover">Discover Program</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_my_tags">My Tags</string>
+
+    <string-array name="menu_array">
+        <item>Forside</item>
+        <item>Mine lister</item>
+        <item>Opdag afsnit</item>
+        <!--<item>Settings</item>-->
+        <!--<item>Personlig Profil</item>//-->
+        <item>Emnerod</item>
+        <item>Om SEGES</item>
+        <!--om SEGES”, ( about SEGES-->
+    </string-array>
+
+    <string name="no_records">No record found !</string>
+
+    <!--my tags-->
+    <string name="tags_description">Emneord er et filtrerings system, hvor du vælger de emner du er interesseret i og
+        derefter kan kan systematisere områder af applicationen til kun at vise podcasts der
+        indeholder dine personligt valgte emneord</string>
+    <string name="tags_saved">MyTags saved successfully.</string>
+    <!--profile screen-->
+    <string name="favorite">Favoritter</string>
+    <string name="hor_senere">Hør senere</string>
+    <string name="mine_emneord">Mine Emneord</string>
+    <string name="btn_search">SØG</string>
+    <string name="btn_short">kort afsnit</string>
+    <string name="btn_long">langt afsnit</string>
+
+
+    <!--settings-->
+    <string name="launch_settings">Launch setting</string>
+    <string name="notifications">Notifications</string>
+    <string name="offline_settings">Offline setting</string>
+    <string name="vibrate">Vibrate setting</string>
+    <string name="profile_settings">Profile setting</string>
+    <string name="Community">Community</string>
+    <string name="Users">Users</string>
+    <string name="Contact">Users</string>
+    <string name="FAQ">FAQ</string>
+
+    <string-array name="category_list">
+        <item>Ansættelsesret</item>
+        <item>Arbejdsmiljø</item>
+        <item>Biogas</item>
+        <item>Byggeri</item>
+        <item>Deltid</item>
+        <item>Ejerskifte</item>
+        <item>Erhvervsjura</item>
+        <item>Energi</item>
+        <item>Familie jura</item>
+        <item>Fjerkræ</item>
+        <item>Får</item>
+        <item>Geder</item>
+        <item>Heste</item>
+        <item>IT</item>
+        <item>Kvæg</item>
+        <item>Landdrstriktsudvikling</item>
+        <item>Ledelse</item>
+        <item>Maskiner</item>
+        <item>Miljø</item>
+        <item>Natur</item>
+        <item>Pelsdyr</item>
+        <item>Planteavl</item>
+        <item>Skat</item>
+        <item>Socialjura</item>
+        <item>Strategi</item>
+        <item>Svin</item>
+        <item>Tilskud</item>
+        <item>Økologi</item>
+        <item>Økonomi</item>
+    </string-array>
+
+    <string name="about1">
+        Har du en god idé om hvilket emne det næste afsnit af SEGES podcast skal handle om, eller har du kommentarer til podcastene kan du give os en kommentar via mail <a href="mailto:Kihk@seges.dk">Kihk@seges.dk</a>
+        eller klikke dig ind på vores side ”idéladen” og skrive en kommentar
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

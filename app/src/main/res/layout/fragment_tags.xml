@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9ca">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/profile_bg"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="7dp"
+        android:layout_height="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll_view">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:id="@+id/show_info"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@color/button_round"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="16dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_margin="1dp"
+                        android:text="@string/tags_description"
+                        android:background="@android:color/white"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/close_button"
+                        android:layout_gravity="bottom|right"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/tag_1"
+                            android:layout_width="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Ansættelsesret"
+                            android:paddingLeft="7dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+
+                        <CheckBox
+                            android:id="@+id/tag_2"
+                            android:layout_width="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Arbejdsmiljø"
+                            android:paddingLeft="7dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_3"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:paddingLeft="7dp"
+                            android:text="Biogas"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:paddingLeft="7dp"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Byggeri"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:layout_margin="4dp"
+                            android:id="@+id/tag_5"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Deltid"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_6"
+                            android:paddingLeft="7dp"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Ejerskifte"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_7"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Erhvervsjura"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:layout_margin="4dp"
+                            android:id="@+id/tag_8"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Energi"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_9"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Familie jura"
+                            android:layout_margin="4dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_10"
+                            android:paddingLeft="7dp"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Fjerkræ"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_11"
+                            android:paddingLeft="7dp"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Får"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_12"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_margin="4dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Geder"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_13"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Heste"
+                            android:layout_margin="4dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:checked="false" />
+                        <CheckBox
+                            android:id="@+id/tag_14"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="IT"
+                            android:layout_margin="4dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_15"
+                            android:paddingLeft="7dp"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:text="Kvæg"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_16"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Landdrstriktsudvikling"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:background="@color/button_round"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/tag_17"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Ledelse"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_18"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Maskiner"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_19"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Miljø"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_20"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Natur"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_21"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Pelsdyr"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_22"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Planteavl"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_23"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Skat"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_24"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Socialjura"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_25"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Strategi"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_26"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Svin"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_27"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Tilskud"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_28"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Økologi"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <CheckBox
+                            android:id="@+id/tag_29"
+                            android:paddingLeft="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/my_tag_checkbox"
+                            android:layout_margin="4dp"
+                            android:text="Økonomi"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <Button
+                            android:id="@+id/more_info"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="12sp"
+                            android:text="Hvad er Emneord?"
+                            android:textColor="@android:color/black"
+                            android:background="@color/category_unselected"
+                            android:layout_height="wrap_content" />
+                        <Button
+                            android:id="@+id/save_tags"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:text="Gem ændringer"
+                            android:layout_marginTop="14dp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/category_unselected"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

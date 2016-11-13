@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/menu_settings"
+        android:textColor="@color/list_title"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/profile_bg"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:layout_height="0dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="@string/launch_settings"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:background="@color/button_round"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="@string/offline_settings"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@color/button_round"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="@string/notifications"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@color/button_round"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="@string/vibrate"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@color/button_round"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="@string/profile_settings"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@color/button_round"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="@string/Community"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@color/button_round"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="@string/Users"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@color/button_round"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:text="@string/Contact"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:background="@color/adapter_bg_2"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:text="@string/FAQ"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"
+                android:background="@color/adapter_bg_2"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

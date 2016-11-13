@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.seges.newpodcast.ui.fragments.AboutFragment"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView2"
+                android:text="Har du idéer til podcast afsnit?"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#eb570d"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView3"
+                android:text="@string/about1"
+                android:textAlignment="center"
+                android:textColor="#eb570d"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:autoLink="email" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDELADEN"
+                android:id="@+id/btn_ideladen"
+                android:background="#e25f4d"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView4"
+                android:text="Om SEGES "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#2f5e94"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView5"
+                android:text="I SEGES arbejder vi med alt, der har med landbrugsdrift at gøre og mere til. Fra de store landbrugsfaglige emner inden for planter, miljø, dyrehold og økologi til økonomi, skat, jura, it, arkitektur, regnskab, HR, undervisning og naturpleje. Det sker i tæt samarbejde med universiteter, ministerier, virksomheder og interesseorganisationer i både ind- og udland."
+                android:textAlignment="center"
+                android:textColor="#2f5e94"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

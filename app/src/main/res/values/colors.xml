@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F57E5C</color>
+    <color name="colorPrimaryDark">#D47050</color>
+    <color name="colorAccent">#6989FF</color>
+    <color name="colorStatus">#62565352</color>
+
+    <color name="main_bg">#F0F0E9</color>
+    <color name="menu_header_color">#C8C7B2</color>
+    <color name="profile_bg">#D2D2D2</color>
+
+    <color name="adapter_bg_1">#D4D3C2</color>
+    <color name="adapter_bg_2">#C8C7B2</color>
+
+    <color name="adapter_favorite_bg_1">#B4CAD2</color>
+    <color name="adapter_favorite_bg_2">#7DA3AD</color>
+
+    <color name="adapter_listen_later_bg_1">#B4C5AF</color>
+    <color name="adapter_listen_later_bg_2">#7C9876</color>
+
+
+    <color name="button_favorite_bg_1">#71919c</color>
+    <color name="button_favorite_bg_2">#26464e</color>
+
+    <color name="button_listen_later_bg_1">#77936e</color>
+    <color name="button_listen_later_bg_2">#32592a</color>
+
+
+    <color name="text_blue">#4E808D</color>
+    <color name="category_unselected">#7C9877</color>
+    <color name="list_title">#125529</color>
+    <color name="button_round">#008080</color>
+    <color name="listen_later_bg">#7C9876</color>
+    <color name="player_text_color">#E95D0F</color>
+</resources>
